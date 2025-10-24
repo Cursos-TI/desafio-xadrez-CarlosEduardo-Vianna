@@ -4,6 +4,8 @@ int main() {
 
     int b = 0;
     int r = 0;
+    int c = 0;
+    int opcao;
 
     printf("### Movimento da torre ###\n");
 
@@ -31,8 +33,51 @@ int main() {
         printf("esquerda\n");
         r++;
     } while (r < 8);
+
+    printf("\n### Movimento do cavalo ###\n");
+
+    // O usuario escolhe a direção que o cavalo vai se mover
+    printf("Escolha a direção que o cavalo vai se mover!\n");
+    printf("1. baixo e esquerda\n");
+    printf("2. baixo e direita\n");
+    scanf("%d", &opcao);
+
+    // menu interativo
+    switch (opcao)
+    {
+    case 1:
+         while (c < 1)
+    {
+        c++;
+
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n");
+        }
+        
+        printf("Esquerda\n");
+    }
+        break;
     
+    case 2:
+         while (c < 1)
+    {
+        c++;
+
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n");
+        }
+        
+        printf("Direita\n");
+    }
+        break;
     
+    default:
+        printf("Opção invalida");
+    
+    break;
+    }
 
     return 0;
 }
